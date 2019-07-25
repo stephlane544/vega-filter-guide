@@ -1,33 +1,80 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.sub-container{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-bottom: 40px;
+  font-size: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.sub-container > div, .sub-container > img, .sub-container > iframe{
+  grid-column: 2/3;
+  margin-top: 40px;
+
+}
+
+iframe, .highlightedWords{
+  justify-self: center;
+}
+
+.header{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 100vw;
+  /* margin-top: 50px; */
+  margin-bottom: 110px;
+}
+
+iframe{
+  border-radius: 2%;
+}
+
+.title{
+  font-weight: 500;
+  font-size: 50px;
+  background-color: #ea2189;
   color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.demo{
+  margin-top: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.demo, .steps, .almostDone{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.almostDone{
+  font-weight: 900;
+  color: #ea2189;
+  justify-self: center;
+}
+
+img{
+  justify-self: center;
+  margin-bottom: 80px;
+}
+
+.stepsContainer{
+  background-color: #3ebeb0;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 110px;
+}
+
+.vegaText{
+  background-color: lightgray;
+  padding: 40px;
 }
